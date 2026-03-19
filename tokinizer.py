@@ -315,6 +315,7 @@ if __name__ == "__main__":
         ("train2.txt", "test2.txt", 250, 1, "myoutput2.txt"),
         ("train2.txt", "test2.txt", 250, 5, "myoutput2.txt"),
         ("train2.txt", "test2.txt", 250, 10, "myoutput2.txt"),
+        # ... add your own configurations here
     ]
 
     # Initialize or clear the output files
