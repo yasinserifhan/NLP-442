@@ -1,0 +1,52 @@
+{
+ "gpu": "Tesla T4",
+ "torch": "2.11.0+cu130",
+ "smoke_test": false,
+ "bert": {
+  "n": 9824,
+  "accuracy": 0.9026872964169381,
+  "macro_f1": 0.9024984033414226,
+  "batched_ms_per_example": 0.7161921806366514,
+  "peak_gpu_memory_gb": 1.77764864,
+  "train_minutes": 26.1366379459699,
+  "single_ms_per_example": 12.295041000015772
+ },
+ "comparison": {
+  "BERT (fine-tuned)": {
+   "accuracy": 0.892,
+   "invalid_rate": 0.0,
+   "adjusted_accuracy": 0.892,
+   "macro_f1": 0.8915,
+   "median_ms_per_example": 12.295
+  },
+  "qwen2.5:7b zero-shot": {
+   "accuracy": 0.877,
+   "invalid_rate": 0.0,
+   "adjusted_accuracy": 0.877,
+   "macro_f1": 0.8786,
+   "median_ms_per_example": 125.8506
+  },
+  "qwen2.5:7b few-shot": {
+   "accuracy": 0.872,
+   "invalid_rate": 0.0,
+   "adjusted_accuracy": 0.872,
+   "macro_f1": 0.8722,
+   "median_ms_per_example": 128.4508
+  },
+  "llama3.2:3b zero-shot": {
+   "accuracy": 0.511,
+   "invalid_rate": 0.0,
+   "adjusted_accuracy": 0.511,
+   "macro_f1": 0.4678,
+   "median_ms_per_example": 67.5773
+  },
+  "llama3.2:3b few-shot": {
+   "accuracy": 0.604,
+   "invalid_rate": 0.0,
+   "adjusted_accuracy": 0.604,
+   "macro_f1": 0.5848,
+   "median_ms_per_example": 67.2872
+  }
+ },
+ "ollama_models": "NAME           ID              SIZE      MODIFIED      \nllama3.2:3b    a80c4f17acd5    2.0 GB    9 minutes ago    \nqwen2.5:7b     845dbda0ea48    4.7 GB    9 minutes ago    \n"
+}

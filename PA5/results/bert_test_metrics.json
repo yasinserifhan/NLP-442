@@ -1,0 +1,9 @@
+{
+ "n": 9824,
+ "accuracy": 0.9026872964169381,
+ "macro_f1": 0.9024984033414226,
+ "batched_ms_per_example": 0.7161921806366514,
+ "peak_gpu_memory_gb": 1.77764864,
+ "train_minutes": 26.1366379459699,
+ "single_ms_per_example": 12.295041000015772
+}

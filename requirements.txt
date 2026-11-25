@@ -1,0 +1,9 @@
+# PA1 and PA2 use only the standard library.
+# PA3
+nltk
+scikit-learn
+numpy
+# PA4
+gensim
+pandas
+torch

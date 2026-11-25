@@ -1,0 +1,36 @@
+Training corpus: train_corpus.txt
+  tokens: 520  vocabulary: 279  sentences: 40
+
+Perplexity on visible_testCorpus.txt (add-1 smoothing):
+  unigram    160.82
+  bigram     157.99
+  trigram    239.36
+
+Top 10 bigrams:
+  . </s>: 40
+  <s> bu: 6
+  <s> bir: 4
+  , bir: 3
+  daha iyi: 3
+  , değerlendirme: 2
+  <s> n-gram: 2
+  amaçlar .: 2
+  bir dil: 2
+  bir kelimenin: 2
+
+Top 10 trigrams:
+  , bir kelimenin: 2
+  <s> bu nedenle: 2
+  amaçlar . </s>: 2
+  bir test dosyası: 2
+  gelir . </s>: 2
+  kullanır . </s>: 2
+  , alan terimlerini: 1
+  , aşırı uyumu: 1
+  , bazı durumlarda: 1
+  , benzer ama: 1
+
+Generated sentences (top-3 followers, seed 42):
+  <s> bir dil işleme , değerlendirme sırasında gizli bir kelimenin hemen önce gelen kelimeye bağlı olduğunu varsayar . </s>
+  <s> bir dil modelinin test dosyası da temel ilkelerini somutlaştırmayı amaçlar . </s>
+  <s> bir model davranışını doğrudan etkiler . </s>

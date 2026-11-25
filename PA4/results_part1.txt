@@ -1,0 +1,47 @@
+Original : NLP is a fascinating field of study and I love learning about it
+Replaced : NLP is a interesting fields of study and I love teaching about it
+
+fascinating: interesting (0.762), intriguing (0.725), enlightening (0.664), captivating (0.646), facinating (0.642)
+field: fields (0.558), fi_eld (0.519), Keith_Toogood (0.497), Mackenzie_Hoambrecker (0.495), Josh_Arauco_kicked (0.488)
+learning: teaching (0.660), learn (0.637), Learning (0.621), reteaching (0.581), learner_centered (0.574)
+--------------------------------------------------------------------------------
+Words with vectors: ['I', 'am', 'a', 'student', 'studying', 'NLP', 'at', 'Hacettepe', 'University']
+Sentence vector length: 300
+--------------------------------------------------------------------------------
+Query: Is swimming a good sport ?
+  0.64866 -> Swimming is among the sports that are very beneficial for health .
+  0.63138 -> The water was warm enough for swimming .
+  0.47738 -> When I saw the cat , it was running very fast .
+
+Query: Does Turkey have good universities ?
+  0.68122 -> Turkey is among the countries with the most universities .
+  0.60277 -> The capital of Turkey ( from now on it is Türkiye ) is Ankara .
+  0.58584 -> I am very happy to have taken the AIN442 and BBM497 courses of Hacettepe University .
+
+Query: What happened to your backpack ?
+  0.68521 -> I forgot my backpack on campus and when I got there it was in the same place .
+  0.53898 -> If you have a social close friend , you will be social too .
+  0.53118 -> When I saw the cat , it was running very fast .
+
+--------------------------------------------------------------------------------
+good / great: top-5 dimensions (index, product, v1, v2)
+   (164, 0.1426, 0.3203, 0.4453)
+   (153, 0.1284, 0.3633, 0.3535)
+   (251, 0.1157, 0.2598, 0.4453)
+   (114, 0.115, 0.2988, 0.3848)
+   (216, 0.0752, 0.207, 0.3633)
+
+good / bad: top-5 dimensions (index, product, v1, v2)
+   (130, 0.1372, -0.3164, -0.4336)
+   (74, 0.1328, -0.3223, -0.4121)
+   (153, 0.122, 0.3633, 0.3359)
+   (240, 0.1111, 0.2598, 0.4277)
+   (114, 0.1056, 0.2988, 0.3535)
+
+car / banana: top-5 dimensions (index, product, v1, v2)
+   (74, 0.1296, -0.2305, -0.5625)
+   (174, 0.0942, -0.2275, -0.4141)
+   (149, -0.0904, -0.3379, 0.2676)
+   (222, -0.0853, 0.4141, -0.2061)
+   (114, -0.0847, 0.2852, -0.2969)
+

@@ -1,0 +1,7 @@
+X shape: (10000, 300)  positives: 5000  negatives: 5000
+Train / test: 8000 / 2000 (stratified, seed 42)
+Test metrics (5 epochs, hidden_dim 64, lr 1e-3, batch 32):
+  accuracy  0.8320
+  precision 0.8294
+  recall    0.8360
+  f1        0.8327

@@ -1,0 +1,72 @@
+Total sentences in dataset: 57340
+
+First example sentence:
+[('The', 'DET'), ('Fulton', 'NOUN'), ('County', 'NOUN'), ('Grand', 'ADJ'), ('Jury', 'NOUN'), ('said', 'VERB'), ('Friday', 'NOUN'), ('an', 'DET'), ('investigation', 'NOUN'), ('of', 'ADP'), ("Atlanta's", 'NOUN'), ('recent', 'ADJ'), ('primary', 'NOUN'), ('election', 'NOUN'), ('produced', 'VERB'), ('``', '.'), ('no', 'DET'), ('evidence', 'NOUN'), ("''", '.'), ('that', 'ADP'), ('any', 'DET'), ('irregularities', 'NOUN'), ('took', 'VERB'), ('place', 'NOUN'), ('.', '.')]
+
+Universal Tags: ['.', 'ADJ', 'ADP', 'ADV', 'CONJ', 'DET', 'NOUN', 'NUM', 'PRON', 'PRT', 'VERB', 'X']
+
+Working with Subset -> Train sentences: 45872, Test sentences: 11468
+
+Tagger Transitions (first 5 sorted): {'.': {'.': 12648, 'ADJ': 3410, 'ADP': 7689, 'ADV': 5132, 'CONJ': 8209}, '<START>': {'.': 4091, 'ADJ': 1558, 'ADP': 5678, 'ADV': 4136, 'CONJ': 2222}, 'ADJ': {'.': 6655, 'ADJ': 3805, 'ADP': 5884, 'ADV': 652, 'CONJ': 2561}, 'ADP': {'.': 1139, 'ADJ': 9557, 'ADP': 2310, 'ADV': 1805, 'CONJ': 212}, 'ADV': {'.': 7656, 'ADJ': 6141, 'ADP': 6400, 'ADV': 4367, 'CONJ': 792}}
+
+Tagger Emissions (first 5 sorted): {'.': {'!': 1300, "'": 259, "''": 6974, '(': 1947, ')': 1984}, 'ADJ': {"'48": 1, '1/20th': 1, '1/50th': 1, '10-day': 1, '10-foot': 1}, 'ADP': {"'cept": 1, "'ceptin'": 1, "'fore": 1, "'till": 1, '-': 54}, 'ADV': {"'most": 1, "'nuff": 1, "'round": 3, "'way": 1, 'A.D.': 6}, 'CONJ': {'&': 136, "'n'": 2, 'An': 1, "An'": 1, 'And': 722}}
+
+Tagger Tags (sorted): ['.', 'ADJ', 'ADP', 'ADV', 'CONJ', 'DET', 'NOUN', 'NUM', 'PRON', 'PRT', 'VERB', 'X']
+
+Vocabulary size: 50595
+
+Tagger Vocab (first 5 sorted): ['!', '$.027', '$.03', '$.054/mbf', '$.07']
+
+Tagger Tag Counts (sorted items): {'.': 118045, 'ADJ': 66949, 'ADP': 115998, 'ADV': 44968, 'CONJ': 30622, 'DET': 109545, 'NOUN': 220736, 'NUM': 11963, 'PRON': 39400, 'PRT': 23976, 'VERB': 146006, 'X': 1057}
+
+=== VITERBI DECODING & EVALUATION ===
+Starting decoding for test sentences...
+Processed 2500/11468 sentences...
+Processed 5000/11468 sentences...
+Processed 7500/11468 sentences...
+Processed 10000/11468 sentences...
+
+=== FINAL RESULTS ===
+Accuracy: 0.9572
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           .       0.97      1.00      0.98     29520
+         ADJ       0.92      0.91      0.91     16772
+         ADP       0.95      0.97      0.96     28768
+         ADV       0.89      0.90      0.89     11271
+        CONJ       0.99      0.99      0.99      7529
+         DET       0.97      0.99      0.98     27474
+        NOUN       0.97      0.94      0.96     54822
+         NUM       0.98      0.91      0.94      2911
+        PRON       0.94      0.99      0.96      9934
+         PRT       0.91      0.92      0.91      5853
+        VERB       0.97      0.95      0.96     36744
+           X       0.71      0.46      0.56       329
+
+    accuracy                           0.96    231927
+   macro avg       0.93      0.91      0.92    231927
+weighted avg       0.96      0.96      0.96    231927
+
+=== SAMPLE PREDICTIONS (LAST 5 SENTENCES) ===
+--------------------------------------------------
+SENTENCE  : She went downstairs and received another curious shock , for when Glendora flapped into the dining room in her homemade moccasins , Sarah asked her when she had brought coffee to her room and Glendora said she hadn't .
+ORIGINAL  : ['PRON', 'VERB', 'ADV', 'CONJ', 'VERB', 'DET', 'ADJ', 'NOUN', '.', 'ADP', 'ADV', 'NOUN', 'VERB', 'ADP', 'DET', 'VERB', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', '.', 'NOUN', 'VERB', 'PRON', 'ADV', 'PRON', 'VERB', 'VERB', 'NOUN', 'ADP', 'DET', 'NOUN', 'CONJ', 'NOUN', 'VERB', 'PRON', 'VERB', '.']
+PREDICTED : ['PRON', 'VERB', 'ADV', 'CONJ', 'VERB', 'DET', 'ADJ', 'NOUN', '.', 'ADP', 'ADV', 'NOUN', 'VERB', 'ADP', 'DET', 'VERB', 'NOUN', 'ADP', 'DET', 'ADJ', 'NOUN', '.', 'NOUN', 'VERB', 'PRON', 'ADV', 'PRON', 'VERB', 'VERB', 'NOUN', 'ADP', 'DET', 'NOUN', 'CONJ', 'NOUN', 'VERB', 'PRON', 'VERB', '.']
+--------------------------------------------------
+SENTENCE  : There are many possibilities , including poor circulation , a variety of neurological conditions , and functional disorders .
+ORIGINAL  : ['PRT', 'VERB', 'ADJ', 'NOUN', '.', 'ADP', 'ADJ', 'NOUN', '.', 'DET', 'NOUN', 'ADP', 'ADJ', 'NOUN', '.', 'CONJ', 'ADJ', 'NOUN', '.']
+PREDICTED : ['PRT', 'VERB', 'ADJ', 'NOUN', '.', 'ADP', 'ADJ', 'NOUN', '.', 'DET', 'NOUN', 'ADP', 'DET', 'NOUN', '.', 'CONJ', 'ADJ', 'NOUN', '.']
+--------------------------------------------------
+SENTENCE  : Laura Keene brushed by him with the glass of water .
+ORIGINAL  : ['NOUN', 'NOUN', 'VERB', 'ADP', 'PRON', 'ADP', 'DET', 'NOUN', 'ADP', 'NOUN', '.']
+PREDICTED : ['NOUN', 'NOUN', 'VERB', 'ADP', 'PRON', 'ADP', 'DET', 'NOUN', 'ADP', 'NOUN', '.']
+--------------------------------------------------
+SENTENCE  : `` Sommers , you bale while we row '' , Brassnose commanded .
+ORIGINAL  : ['.', 'NOUN', '.', 'PRON', 'NOUN', 'ADP', 'PRON', 'VERB', '.', '.', 'NOUN', 'VERB', '.']
+PREDICTED : ['.', 'NOUN', '.', 'PRON', 'NOUN', 'ADP', 'PRON', 'VERB', '.', '.', 'NOUN', 'VERB', '.']
+--------------------------------------------------
+SENTENCE  : Even Mr. Miller himself seems uncertain on this score .
+ORIGINAL  : ['ADV', 'NOUN', 'NOUN', 'PRON', 'VERB', 'ADJ', 'ADP', 'DET', 'NOUN', '.']
+PREDICTED : ['ADV', 'NOUN', 'NOUN', 'PRON', 'VERB', 'ADJ', 'ADP', 'DET', 'NOUN', '.']
